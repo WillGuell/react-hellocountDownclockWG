@@ -9,3 +9,81 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+/* Digit Display Styles */
+.digit-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+.digit-box {
+  width: 3rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  border-radius: 8px;
+  color: #FFC857;
+  background: #1E1F24;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+.digit-box.colon {
+  background: transparent;
+  box-shadow: none;
+  width: 1rem;
+}
+/* Timer 2 Specific */
+.timer-section:nth-child(2) .digit-box:not(.colon) {
+  background: #23233A;
+  color: #1E90FF;
+}
+/* Timer 3 Specific */
+.timer-section:nth-child(3) .digit-box:not(.colon) {
+  background: #313250;
+  color: #4CAF50;
+}
+/* Control Buttons */
+.control-panel {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.control-button {
+  padding: 0.8rem 1.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.control-button.start {
+  background: #4CAF50;
+  color: white;
+}
+.control-button.stop {
+  background: #F44336;
+  color: white;
+}
+.control-button.reset {
+  background: #2196F3;
+  color: white;
+}
+.control-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+/* Explanations */
+.explanation {
+  padding: 1rem;
+  background: #1E1F24;
+  border-radius: 8px;
+  color: #F5F6FA;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 1.5rem;

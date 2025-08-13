@@ -6,21 +6,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap"
 
 // index.css'
-import '../styles/index.css'
+
 
 // components
-import Home from './components/Home';
-let seconds =0;
+import SecondsCounter from './components/SecondsCounter';
 
-setInterval( () =>{
-seconds= seconds+1
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home time={seconds}/>
+    <SecondsCounter/>
   </React.StrictMode>,
 )
 
-   },1000 )
+
 
 
